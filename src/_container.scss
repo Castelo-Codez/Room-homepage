@@ -1,0 +1,26 @@
+.container {
+    padding: {
+        left: 15px;
+        right: 15px;
+    }
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+$container-medias-widths: (
+    576px: 540px,
+    768px: 720px,
+    992px: 960px,
+    1200px: 1140px,
+    1400px: 1320px,
+);
+
+@each $media, $width in $container-medias-widths {
+    @media (min-width: $media) {
+        .container {
+            width: $width;
+        }
+    }
+}
+
