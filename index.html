@@ -36,7 +36,11 @@
                         </svg>
                     </button>
                     <div class="overlay"></div>
-                    <nav role="navigation" id="mobile-nav"  aria-label="navigation links">
+                    <nav
+                        role="navigation"
+                        id="mobile-nav"
+                        aria-label="navigation links"
+                    >
                         <button
                             role="button"
                             type="button"
@@ -61,8 +65,8 @@
                             <li role="list" aria-label="home">
                                 <a
                                     href="#"
-                                    aria-label="home link"
                                     role="link"
+                                    aria-label="home link"
                                     title="home"
                                     >home</a
                                 >
@@ -70,8 +74,8 @@
                             <li role="list" aria-label="shop link">
                                 <a
                                     href="#"
-                                    aria-label="shop link"
                                     role="link"
+                                    aria-label="shop link"
                                     title="shop"
                                     >shop</a
                                 >
@@ -79,8 +83,8 @@
                             <li role="list" aria-label="about link">
                                 <a
                                     href="#"
-                                    aria-label="about link"
                                     role="link"
+                                    aria-label="about link"
                                     title="shop"
                                     >about</a
                                 >
@@ -88,8 +92,8 @@
                             <li role="list" aria-label="contact link">
                                 <a
                                     href="#"
-                                    aria-label="contact link"
                                     role="link"
+                                    aria-label="contact link"
                                     title="shop"
                                     >contact</a
                                 >
@@ -97,12 +101,7 @@
                         </ul>
                     </nav>
                 </div>
-                <a
-                    href="/"
-                    aria-label="home page link"
-                    role="link"
-                    title="home"
-                >
+                <a href="/" aria-label="home page link" title="home">
                     <svg
                         width="62"
                         role="img"
@@ -122,8 +121,8 @@
                         <li role="list" aria-label="home">
                             <a
                                 href="#"
-                                aria-label="home link"
                                 role="link"
+                                aria-label="home link"
                                 title="home"
                                 >home</a
                             >
@@ -131,8 +130,8 @@
                         <li role="list" aria-label="shop link">
                             <a
                                 href="#"
-                                aria-label="shop link"
                                 role="link"
+                                aria-label="shop link"
                                 title="shop"
                                 >shop</a
                             >
@@ -140,8 +139,8 @@
                         <li role="list" aria-label="about link">
                             <a
                                 href="#"
-                                aria-label="about link"
                                 role="link"
+                                aria-label="about link"
                                 title="shop"
                                 >about</a
                             >
@@ -149,8 +148,8 @@
                         <li role="list" aria-label="contact link">
                             <a
                                 href="#"
-                                aria-label="contact link"
                                 role="link"
+                                aria-label="contact link"
                                 title="shop"
                                 >contact</a
                             >
@@ -162,7 +161,11 @@
         <main role="main" aria-label="main content">
             <section class="root-section">
                 <section aria-label="section of images">
-                    <ul role="list" aria-label="list of images">
+                    <ul
+                        id="images-list"
+                        role="list"
+                        aria-label="list of images"
+                    >
                         <li
                             role="listitem"
                             aria-label="image wrapper"
@@ -212,9 +215,10 @@
                     </ul>
                 </section>
                 <section aria-label="section of text and controllers">
-                    <div aria-label="features">
+                    <div aria-label="features" id="features">
                         <article
                             id="feature-article"
+                            class="active"
                             role="article"
                             aria-label="article about feature"
                         >
@@ -228,6 +232,41 @@
                                 your vision to life. Create a room in your own
                                 style with our collection and make your property
                                 a reflection of you and what you love.
+                            </p>
+                        </article>
+                        <article
+                            id="feature-article"
+                            role="article"
+                            aria-label="article about feature"
+                        >
+                            <h1 aria-level="1" role="heading">
+                                We are available all across the globe
+                            </h1>
+                            <p aria-label="about feautr">
+                                With stores all over the world, it's easy for
+                                you to find furniture for your home or place of
+                                business. Locally, we’re in most major cities
+                                throughout the country. Find the branch nearest
+                                you using our store locator. Any questions?
+                                Don't hesitate to contact us today.
+                            </p>
+                        </article>
+                        <article
+                            id="feature-article"
+                            role="article"
+                            aria-label="article about feature"
+                        >
+                            <h1 aria-level="1" role="heading">
+                                Manufactured with the best materials
+                            </h1>
+                            <p aria-label="about feautr">
+                                Our modern furniture store provide a high level
+                                of quality. Our company has invested in advanced
+                                technology to ensure that every product is made
+                                as perfect and as consistent as possible. With
+                                three decades of experience in this industry, we
+                                understand what customers want for their home
+                                and office.
                             </p>
                         </article>
                         <button
@@ -258,6 +297,7 @@
                             title="previous button"
                             role="button"
                             aria-controls="feature-article"
+                            id="previous-btn"
                         >
                             <svg
                                 width="14"
@@ -278,6 +318,7 @@
                             role="button"
                             title="next button"
                             aria-controls="feature-article"
+                            id="next-btn"
                         >
                             <svg
                                 aria-hidden="true"
